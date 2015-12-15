@@ -10,7 +10,7 @@ public class Ejercicio14 {
 		primos[0] = 2;
 		int j = 1;
 		
-		for (int i = 0; j<100; i++){
+		for (int i = 0; j<primos.length; i++){
 			
 			for (int k = 2; k<i; k++){
 				
