@@ -17,9 +17,10 @@ public class Ejercicio8 {
 				posicionMin = i;
 			}
 			
-			if (humedad[i]>max)
+			if (humedad[i]>max){
 				max = humedad[i];
 				posicionMax = i;
+			}
 			
 		}
 		
