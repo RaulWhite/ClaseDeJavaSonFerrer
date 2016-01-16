@@ -1,4 +1,8 @@
-public class Ejercicio9 {
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Ejercicio09 {
 
 	public static void main(String[] args) {
 		
