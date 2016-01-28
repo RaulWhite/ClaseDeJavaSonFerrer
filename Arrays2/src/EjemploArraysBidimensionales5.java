@@ -26,12 +26,14 @@ public class EjemploArraysBidimensionales5 {
 		System.out.println("Día\t| Temperatura");
 		System.out.println("=====================");
 		
+		int numDias = 0;
 		for (int j = 0; j<temps.length; j++){
 			if (temps[j][1]>20){
-				System.out.println("Día " + (int)(temps[j][0]) + "\t| " + temps[j][1] + "ºC.");
-				System.out.println("---------------------");
+				numDias++;
 			}
 		}
+		
+		System.out.println("Ha habido " + numDias + " días de más de 20ºC.");
 		
 		entrada.close();
 		
