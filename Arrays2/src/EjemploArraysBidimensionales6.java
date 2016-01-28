@@ -35,26 +35,23 @@ public class EjemploArraysBidimensionales6 {
 		System.out.println();
 		
 		float media = 0;
+		int min = (Integer.parseInt(gente[0][2])), max = (Integer.parseInt(gente[0][2]));
 		
 		for (int k = 0; k < gente.length; k++){
 			media = media + (Float.parseFloat(gente[k][2]));
+			
+			if ((Integer.parseInt(gente[k][2])) < min){
+				min = (Integer.parseInt(gente[k][2]));
+			}
+			if ((Integer.parseInt(gente[k][2])) > max){
+				max = (Integer.parseInt(gente[k][2]));
+			}
 		}
 		
 		media = media / gente.length;
 		
 		System.out.println("Media de edad: " + media + " años.");
-		
-		int min = (Integer.parseInt(gente[0][2])), max = (Integer.parseInt(gente[0][2]));
-		
-		for (int l = 1; l < gente.length; l++){
-			if ((Integer.parseInt(gente[l][2])) < min){
-				min = (Integer.parseInt(gente[l][2]));
-			}
-			if ((Integer.parseInt(gente[l][2])) > max){
-				max = (Integer.parseInt(gente[l][2]));
-			}
-		}
-		
+				
 		System.out.println("Edad mínima: " + min + " años.");
 		System.out.println("Edad máxima: " + max + " años.");
 		
