@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 4 elements to &apos;Variables/src&apos;&#x0D;&#x0A;- Original project: &apos;Variables&apos;&#x0D;&#x0A;- Destination element: &apos;Variables/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     PruebasVariables.java&#x0D;&#x0A;     PruebasVariablesConversiones.java&#x0D;&#x0A;     PruebasVariablesMates.java&#x0D;&#x0A;     PruebasVariablesConstantes.java&#x0D;&#x0A;- Update references to refactored element" description="Move files" destination="/src" element1="PruebasVariables.java" element2="PruebasVariablesConversiones.java" element3="PruebasVariablesMates.java" element4="PruebasVariablesConstantes.java" files="4" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1454624077799" units="0" version="1.0"/>
+</session>

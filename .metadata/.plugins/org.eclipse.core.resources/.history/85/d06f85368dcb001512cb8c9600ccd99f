@@ -1,0 +1,16 @@
+/**
+ * @author Raúl Blanco
+ */
+public class EjemploGeometria {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+	static double areaTriangulo(double base, double altura){
+		return ((base*altura)/2);
+	}
+	
+}
