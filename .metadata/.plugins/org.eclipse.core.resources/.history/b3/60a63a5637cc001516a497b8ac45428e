@@ -1,0 +1,22 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+public class EjemplosArrays {
+	
+	static String[] palabras = new String[10];
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+	static void relleno(){
+		
+		for (int i = 0; i < palabras.lenght; i++){
+			
+		}
+		
+	}
+	
+}
