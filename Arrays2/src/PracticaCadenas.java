@@ -40,7 +40,7 @@ public class PracticaCadenas {
 		
 		// Ejemplo del método Integer.parseInt(texto)
 		String lista[] = {"Ordenador", "500"};
-		int descuento = (Integer.parseInt(lista[1]))/100*90; 
+		int descuento = ((Integer.parseInt(lista[1]))/100)*90;
 		System.out.println("Con un 10% de descuento, el " + lista[0] + " vale " + descuento + " euros.");
 		
 	}

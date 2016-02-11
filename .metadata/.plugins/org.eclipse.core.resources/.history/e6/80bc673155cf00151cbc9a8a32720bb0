@@ -1,0 +1,13 @@
+package Leccion1;
+/**
+ * @author Raúl Blanco Rama
+ */
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		int num;
+		
+	}
+	
+}

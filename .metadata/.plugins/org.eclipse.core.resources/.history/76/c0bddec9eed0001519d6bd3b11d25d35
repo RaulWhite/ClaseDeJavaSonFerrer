@@ -1,0 +1,22 @@
+package Leccion3;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Rectangulo {
+
+	// Atributos
+	int x, y; // Posición del vértice superior izquierdo
+	int ancho, alto; // Ancho y alto del rectángulo (píxeles)
+	
+	// Métodos
+	int area(){
+		return(x*y);
+	}
+	
+	int perimetro(){
+		return((x*2)+(y*2));
+	}
+	
+}

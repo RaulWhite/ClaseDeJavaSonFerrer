@@ -1,0 +1,19 @@
+package Leccion1;
+/**
+ * @author Raúl Blanco Rama
+ */
+public class Persona {
+
+	// Atributos
+	String dni;
+	String nombre;
+	String apellidos;
+	int edad;
+	double peso;
+	
+	// Métodos
+	void mostrar(){
+		System.out.println("Nombre: " + nombre);
+	}
+	
+}
