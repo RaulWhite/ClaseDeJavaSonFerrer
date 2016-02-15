@@ -30,6 +30,14 @@ public class Main {
 		r1.mostrar();
 		r2.mostrar();
 		
+		r1.mover(50,50);
+		r2.mover(50,50);
+		
+		r1.mostrar();
+		r2.mostrar();
+		
+		System.out.println(r1.puntoInterior(0, 150));
+		
 	}
 	
 }

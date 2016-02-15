@@ -1,9 +1,0 @@
-/**
- * @author horabaixa
- *
- * Programa que pide dos números decimales y pregunta qué operación queremos hacer con ellos.
- * (Suma, resta, multiplicación, división).
- */
-public class EjemploAritmetica {
-
-}
