@@ -7,15 +7,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Rectangulo r1 = new Rectangulo();
-		
-		r1.x = 0;
-		r1.y = 0;
-		r1.alto = 200;
-		r1.ancho = 300;
+		Rectangulo r1 = new Rectangulo(0, 0, 200, 300);
 		
 		Rectangulo r2 = new Rectangulo();
-		
 		r2.x = 500;
 		r2.y = 500;
 		r2.alto = 450;

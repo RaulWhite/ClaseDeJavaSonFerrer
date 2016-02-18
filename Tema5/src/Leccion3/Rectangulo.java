@@ -10,6 +10,26 @@ public class Rectangulo {
 	int x, y; // Posición del vértice superior izquierdo
 	int ancho, alto; // Ancho y alto del rectángulo (píxeles)
 	
+	// Método constructor
+	Rectangulo(){
+		
+	}
+	
+	Rectangulo(int x, int y, int ancho, int alto){
+		this.x = x;
+		this.y = y;
+		this.alto = alto;
+		this.ancho = ancho;
+	}
+	
+	Rectangulo(int x, int y){
+		this(x, y, 50, 50);
+	}
+	
+	Rectangulo(int x, int y, int lado){
+		this(x, y, lado, lado);
+	}
+	
 	// Métodos
 	int area(){
 		return (alto * ancho);

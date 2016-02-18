@@ -1,0 +1,13 @@
+package Leccion3;
+
+public class Circumferencia {
+
+	//Atributos: x, y, radio
+	
+	
+	//Constructores
+	
+	
+	//Métodos: perímetro(), área(), mostrar()
+	
+}

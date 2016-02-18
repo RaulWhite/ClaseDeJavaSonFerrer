@@ -1,0 +1,30 @@
+package Leccion6;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class CuentaBancaria {
+
+	// Atributos: saldo
+	
+	double saldo;
+	
+	// Métodos
+	// - Constructor (tomando como parámetro el saldo)
+	
+	CuentaBancaria(){
+		
+	}
+	
+	CuentaBancaria(double saldo){
+		
+	}
+	
+	// - Depositar (toma una cantidad y la suma al saldo)
+	// - Boolean retirar (si se puede sacar esa cantidad)
+	// - Retirar (lo contrario a depositar)
+	// - Métodos de acceso para el saldo
+	
+	
+}
