@@ -1,0 +1,19 @@
+package leccion7;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Coche c1 = new Coche();
+		c1.setMatricula("0000BBB");
+		
+		Coche c2 = new Coche();
+		c2.setMatricula("9999ZZZ" );
+		
+	}
+	
+}

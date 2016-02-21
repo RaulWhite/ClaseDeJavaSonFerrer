@@ -1,0 +1,11 @@
+package leccion7;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Coche {
+
+	private String matricula;
+	
+}

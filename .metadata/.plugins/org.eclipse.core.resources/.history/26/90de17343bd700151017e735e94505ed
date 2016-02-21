@@ -1,0 +1,17 @@
+package leccion7;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Coche {
+
+	// Atributos
+	private String matricula;
+	
+	//Métodos de acceso
+	String getMatricula(){
+		return matricula;
+	}
+	
+}
