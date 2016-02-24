@@ -1,0 +1,32 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+import java.util.Scanner;
+
+public class Ejercicio1 {
+
+	public static void main(String[] args) {
+		
+		String libros[][] = new String[5][4];
+		Scanner entrada = new Scanner(System.in);
+		
+		for (int i = 0; i < libros.length; i++){
+			System.out.println("Libro " + (i+1));
+			System.out.print("ISBN: ");
+			libros[i][0] = entrada.nextLine();
+			
+			System.out.print("Título: ");
+			libros[i][1] = entrada.nextLine();
+			
+			System.out.print("Autor: ");
+			libros[i][2] = entrada.nextLine();
+			
+			System.out.print("Editorial: ");
+			libros[i][3] = entrada.nextLine();
+		}
+		
+		entrada.close();
+		
+	}
+	
+}

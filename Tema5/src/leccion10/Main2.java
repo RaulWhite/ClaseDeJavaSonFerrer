@@ -23,6 +23,8 @@ public class Main2 {
 		System.out.println("Área de c1: " + c1.area());
 		System.out.println("Área de c2: " + c2.area());
 		
+		System.out.println(Circumferencia.formulaArea());
+		
 	}
 	
 }

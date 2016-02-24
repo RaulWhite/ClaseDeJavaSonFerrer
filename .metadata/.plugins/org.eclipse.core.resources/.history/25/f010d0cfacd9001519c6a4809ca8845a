@@ -1,0 +1,17 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+import java.util.Scanner;
+
+public class Ejercicio1 {
+
+	public static void main(String[] args) {
+		
+		String libros[][] = new String[5][4];
+		Scanner entrada = new Scanner(System.in);
+		
+		for (int i = 0, i < libros.length, i++;)
+		
+	}
+	
+}

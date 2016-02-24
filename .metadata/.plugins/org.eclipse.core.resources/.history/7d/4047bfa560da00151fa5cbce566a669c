@@ -1,0 +1,18 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+package biblioteca;
+
+public class Libro {
+
+	// Atributos
+	private String titulo;
+	private String isbn;
+	private Autor autor;
+	private static int añoActual = 2016;
+	
+	// Constructores
+	public Libro(){
+		
+	}
+}

@@ -1,0 +1,16 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+
+package inicio;
+import Conversor.java;
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}
