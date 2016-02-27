@@ -12,7 +12,7 @@ public class Persona {
 	private String apellidos;
 	private int edad;
 	private double peso;
-	private int contador = 0;
+	private static int contador = 0;
 
 	// Métodos constructor
 	Persona() { // Constructor implícito

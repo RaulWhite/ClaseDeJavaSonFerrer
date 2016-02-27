@@ -1,0 +1,25 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+package inicio;
+
+import java.util.Scanner;
+
+import biblioteca.Autor;
+import biblioteca.Libro;
+
+public class Inicio2 {
+
+	public static void main(String[] args) {
+		
+		Libro libros[] = new Libro[100];
+		
+		libros[0] = new Libro();
+		libros[0].setTitulo("Grandes esperanzas");
+		
+		libros[1] = new Libro();
+		libros[1].setTitulo("La tienda de antigüedades");
+		
+	}
+	
+}

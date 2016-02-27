@@ -44,6 +44,8 @@ public class Inicio {
 		System.out.println();
 		System.out.println("Libro:");
 		System.out.println(l1.toString());
+		
+		entrada.close();
 	}
 	
 }

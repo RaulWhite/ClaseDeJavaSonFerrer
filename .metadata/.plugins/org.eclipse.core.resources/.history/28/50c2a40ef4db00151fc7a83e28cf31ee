@@ -1,0 +1,28 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+package inicio;
+
+import java.util.Scanner;
+
+import biblioteca.Autor;
+import biblioteca.Libro;
+
+public class Inicio2 {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner (System.in);
+		Libro libros[] = new Libro[100];
+		
+		for (int i = 0; i < libros.length; i++){
+			libros[i] = new Libro();
+		}
+		
+		for (int j = 0; j < libros.length; j++){
+			
+		}
+		
+	}
+	
+}
