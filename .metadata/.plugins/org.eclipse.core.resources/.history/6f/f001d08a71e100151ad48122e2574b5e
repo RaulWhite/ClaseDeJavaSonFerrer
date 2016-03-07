@@ -1,0 +1,19 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+
+package Poker;
+
+public class Carta {
+	
+	// Atributos	
+	private int valor;
+	private int palo;
+
+	//Constructores
+	
+	
+	
+	// Métodos
+	
+}

@@ -1,0 +1,65 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+
+package Poker;
+
+public class Carta {
+	
+	// Atributos	
+	private int valor;
+	private int palo;
+
+	//Constructores
+	public Carta(){
+		
+	}
+	
+	public Carta (int valor, int palo){
+		this.valor = valor;
+		this.palo = palo;
+	}
+	
+	
+	// Métodos
+	
+	public boolean compara(Carta otraCarta){
+		if (valor == otraCarta.valor && palo == otraCarta.palo){
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public String toString(){
+		String p;
+		
+		Switch (palo){
+			case 0:
+				p = "Diamante";
+				break;
+			case 1:
+				p = "Tréboles";
+				Break;
+		}
+		
+		return carta;
+	}
+
+	public int getValor() {
+		return valor;
+	}
+	
+	public void setValor(int valor) {
+		this.valor = valor;
+	}
+
+	public int getPalo() {
+		return palo;
+	}
+
+	public void setPalo(int palo) {
+		this.palo = palo;
+	}
+	
+}

@@ -1,0 +1,46 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+
+package Poker;
+
+public class Carta {
+	
+	// Atributos	
+	private int valor;
+	private int palo;
+
+	//Constructores
+	public Carta(){
+		
+	}
+	
+	public Carta (int valor, int palo){
+		this.valor = valor;
+		this.palo = palo;
+	}
+	
+	
+	// Métodos
+	
+	public boolean compara(Carta otraCarta){
+		
+	}
+
+	public int getValor() {
+		return valor;
+	}
+	
+	public void setValor(int valor) {
+		this.valor = valor;
+	}
+
+	public int getPalo() {
+		return palo;
+	}
+
+	public void setPalo(int palo) {
+		this.palo = palo;
+	}
+	
+}

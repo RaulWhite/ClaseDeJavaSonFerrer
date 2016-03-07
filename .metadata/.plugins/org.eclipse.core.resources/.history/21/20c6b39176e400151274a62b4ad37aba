@@ -1,0 +1,52 @@
+package algebra;
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Polinomio {
+
+	// Atributos
+	private double coeficientes[];
+	
+	// Constructores
+	public Polinomio(){
+		this(2);
+	}
+	
+	public Polinomio (int grado){
+		for (int i = 0; i <= grado; i++){
+			coeficientes[grado] = 0;
+		}
+	}
+	
+	public Polinomio (double[] coefs){
+		coefs = coeficientes;
+	}
+	
+	// Métodos
+	public int getGrado(){
+		return coeficientes.length - 1;
+	}
+	
+//	double evaluar (double x){
+//		
+//	}
+//	
+//	Polinomio sumar (Polinomio p){
+//		
+//	}
+//	
+//	Polinomio restar (Polinomio p){
+//		
+//	}
+	
+	public String toString(){
+		String imprimir = String.valueOf(coeficientes[0]);
+		
+		for (int i = 1; i <= coeficientes.length; i++){
+			imprimir = imprimir + " + " + String.valueOf(coeficientes[i]) + "x^" + i;
+		}
+		return imprimir
+	}
+	
+}
