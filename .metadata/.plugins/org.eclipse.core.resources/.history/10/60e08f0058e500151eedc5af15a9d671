@@ -1,0 +1,20 @@
+package inicio;
+
+import algebra.Polinomio;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		
+		double coeficientes[] = {3, -2, 5, 1}; 
+		Polinomio p = new Polinomio(coeficientes);
+		
+		
+						
+	}
+	
+}

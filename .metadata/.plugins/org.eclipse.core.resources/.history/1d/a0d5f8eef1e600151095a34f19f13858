@@ -1,0 +1,13 @@
+package leccion12;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Sobrecarga {
+
+	public static void main(String[] args) {
+		
+	}
+	
+}

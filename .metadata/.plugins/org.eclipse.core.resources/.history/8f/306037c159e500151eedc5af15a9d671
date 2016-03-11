@@ -1,0 +1,21 @@
+package inicio;
+
+import algebra.Polinomio;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		 
+		Polinomio p = new Polinomio(new double[] {5});
+		
+		System.out.println(p.toString());
+		
+		System.out.println(p.evaluar(2));
+						
+	}
+	
+}
