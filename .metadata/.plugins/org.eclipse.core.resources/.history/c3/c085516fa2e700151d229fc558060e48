@@ -1,0 +1,17 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+public class FactorialSinBucle {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+	public static int factorial(int n){
+		
+		//Suponemos que n es mayor o igual a 1
+	}
+	
+}

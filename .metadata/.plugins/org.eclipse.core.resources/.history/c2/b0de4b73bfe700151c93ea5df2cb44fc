@@ -1,0 +1,62 @@
+package auxiliar;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Alumno {
+
+	// Atributos
+	private String numExpediente;
+	private String apellidos;
+	private String nombre;
+	private Grupo grupo;
+	
+	// Constructores
+	public Alumno(){
+		
+	}
+	
+	public Alumno(String numExpediente, String apellidos, String nombre, Grupo grupo){
+		
+	}
+
+	// Métodos
+	
+	public String getNumExpediente() {
+		return numExpediente;
+	}
+
+	public void setNumExpediente(String numExpediente) {
+		this.numExpediente = numExpediente;
+	}
+	
+	public String getApellidos() {
+		return apellidos;
+	}
+
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Grupo getGrupo() {
+		return grupo;
+	}
+
+	public void setGrupo(Grupo grupo) {
+		this.grupo = grupo;
+	}
+	
+	public String toString(){
+		return (nombre + " " + apellidos + ". " + grupo.toString());
+	}
+	
+}

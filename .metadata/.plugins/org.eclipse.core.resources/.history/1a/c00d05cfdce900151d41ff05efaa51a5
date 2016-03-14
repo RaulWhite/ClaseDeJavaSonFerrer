@@ -1,0 +1,84 @@
+package auxiliar;
+
+import java.util.Scanner;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Alumno {
+
+	// Atributos
+	private String numExpediente;
+	private String apellidos;
+	private String nombre;
+	private Grupo grupo;
+	
+	// Constructores
+	public Alumno(){
+		
+	}
+	
+	public Alumno(String numExpediente, String apellidos, String nombre, Grupo grupo){
+		this.numExpediente = numExpediente;
+		this.apellidos = apellidos;
+		this.nombre = nombre;
+		this.grupo = grupo;
+	}
+
+	// Métodos
+	
+	public String getNumExpediente() {
+		return numExpediente;
+	}
+
+	public void setNumExpediente(String numExpediente) {
+		this.numExpediente = numExpediente;
+	}
+	
+	public String getApellidos() {
+		return apellidos;
+	}
+
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Grupo getGrupo() {
+		return grupo;
+	}
+
+	public void setGrupo(Grupo grupo) {
+		this.grupo = grupo;
+	}
+	
+	public String toString(){
+		return ("" + nombre + " " + apellidos + ". " + grupo.toString());
+	}
+	
+	public void leeDatos(){
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.print("Número de expediente del alumno: ");
+		this.numExpediente = entrada.nextLine();
+		
+		System.out.print("Nombre del alumno: ");
+		this.nombre = entrada.nextLine();
+		
+		System.out.print("Apellidos del alumno: ");
+		this.apellidos = entrada.nextLine();
+
+		System.out.println("Nivel: ");
+		this.setGrupo(grupo);
+		
+	}
+	
+}

@@ -1,0 +1,28 @@
+package inicio;
+
+import auxiliar.Alumno;
+import auxiliar.Grupo;
+/**
+ * @author Raúl Blanco Rama
+ */
+import instituto.Instituto;
+
+public class Inicio {
+
+	public static void main(String[] args) {
+		
+		Instituto sonFerrer = new Instituto();
+		
+		Grupo primeroGS = new Grupo("FPGS", 1, "A");
+		Grupo terceroESOb = new Grupo("ESO", 3, "B");
+				
+		Alumno a1 = new Alumno("0001", "Blanco Rama", "Raúl", primeroGS);
+		Alumno a2 = new Alumno("0002", "Prueba Prueba", "Carmen", terceroESOb);
+		
+		sonFerrer.addAlumno(a1);
+		
+		
+		
+	}
+	
+}

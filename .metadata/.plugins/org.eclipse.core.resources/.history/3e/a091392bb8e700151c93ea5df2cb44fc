@@ -1,0 +1,24 @@
+package auxiliar;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Alumno {
+
+	// Atributos
+	private String numExpediente;
+	private String apellidos;
+	private String nombre;
+	private Grupo grupo;
+	
+	// Constructores
+	public Alumno(){
+		
+	}
+	
+	public Alumno(String numExpediente, String apellidos, String nombre, Grupo grupo){
+		
+	}
+	
+}

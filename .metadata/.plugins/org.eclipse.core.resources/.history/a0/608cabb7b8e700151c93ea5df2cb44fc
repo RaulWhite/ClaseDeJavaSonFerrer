@@ -1,0 +1,13 @@
+package auxiliar;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Grupo {
+
+	// Atributos
+	private String nivel;
+	p
+	
+}
