@@ -12,5 +12,6 @@
 <fullyQualifiedTypeName name="auxiliar.Alumno"/>
 <fullyQualifiedTypeName name="auxiliar.Grupo"/>
 <fullyQualifiedTypeName name="instituto.Instituto"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
