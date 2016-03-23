@@ -1,0 +1,32 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+public class Ejercicio1 {
+
+	public static void main(String[] args) {
+		
+		System.out.println(transforma(100));
+		
+	}
+	
+	public static int transforma(int dato){
+		int binario = 0;
+		if (dato > 1){
+			binario = (binario*10) + (dato%2);
+		} else {
+			
+		}
+	}
+	
+//	public static void transforma(int dato){
+//		if (dato > 1){
+//			transforma(dato/2);
+//			System.out.print(dato%2);
+//			return;
+//		} else {
+//			System.out.print(dato%2);
+//			return;
+//		}
+//	}
+	
+}

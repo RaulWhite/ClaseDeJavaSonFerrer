@@ -1,0 +1,22 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+public class Ejercicio1 {
+
+	public static void main(String[] args) {
+		
+		System.out.println(transforma(100));
+		
+	}
+	
+	public static int transforma(int dato){
+		int binario = 0;
+		if (dato > 1){
+			binario = binario + (dato%22);
+			return binario + transforma(dato/2);
+		} else {
+			return Integer.parseInt(binario);
+		}
+	}
+	
+}

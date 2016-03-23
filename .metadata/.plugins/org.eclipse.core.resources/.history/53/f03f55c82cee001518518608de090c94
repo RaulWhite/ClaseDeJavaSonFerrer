@@ -1,0 +1,26 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+public class Ejercicio3 {
+
+	public static void main(String[] args) {
+		
+		transforma(100);
+		
+	}
+	
+	public static void transforma(int dato){
+		if (dato > 1){
+			transforma(dato/16);
+			System.out.print(dato%16);
+			return;
+		} else {
+			Switch (dato%16){
+				case 10:
+					System.out.print("A");
+			}
+			return;
+		}
+	}
+	
+}

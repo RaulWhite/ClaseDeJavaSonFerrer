@@ -1,0 +1,23 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+public class Ejercicio1 {
+
+	public static void main(String[] args) {
+		
+		System.out.println(transforma(100));
+		
+	}
+	
+	public static int transforma(int dato){
+		int resultado = 0;
+		if (dato > 1){
+			transforma(dato/2);
+			resultado = (resultado*10) + dato%2;
+			return resultado;
+		} else {
+			return (resultado*10) + dato;
+		}
+	}
+	
+}

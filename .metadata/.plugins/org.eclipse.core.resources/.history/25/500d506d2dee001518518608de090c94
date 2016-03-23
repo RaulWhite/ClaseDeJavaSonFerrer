@@ -1,0 +1,68 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+public class Ejercicio3 {
+
+	public static void main(String[] args) {
+		
+		transforma(110);
+		
+	}
+	
+	public static void transforma(int dato){
+		if (dato > 15 && (dato%16 < 10)){
+			transforma(dato/16);
+			System.out.print(dato%16);
+			return;
+		} else if (dato > 15 && (dato%16 >= 10)){
+			switch (dato%16){
+				case 10:
+					System.out.print("A");
+					break;
+				case 11:
+					System.out.print("B");
+					break;
+				case 12:
+					System.out.print("C");
+					break;
+				case 13:
+					System.out.print("D");
+					break;
+				case 14:
+					System.out.print("E");
+					break;
+				case 15:
+					System.out.print("F");
+					break;
+			}
+			return;
+		} else {
+			if (dato%16 < 10){
+				System.out.print(dato%16);
+			} else {
+				switch (dato%16){
+					case 10:
+						System.out.print("A");
+						break;
+					case 11:
+						System.out.print("B");
+						break;
+					case 12:
+						System.out.print("C");
+						break;
+					case 13:
+						System.out.print("D");
+						break;
+					case 14:
+						System.out.print("E");
+						break;
+					case 15:
+						System.out.print("F");
+						break;
+				}
+			}
+			return;
+		}
+	}
+	
+}
