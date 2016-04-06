@@ -12,7 +12,7 @@ public class Ejercicio3 {
 	public static String transforma(int dato){
 		String hexa = "";
 		if (dato > 15 && (dato%16 < 10)){
-			hexa = hexa + "" + (dato%16);
+			hexa = hexa + (dato%16);
 			return transforma(dato/16) + hexa;
 		} else if (dato > 15 && (dato%16 >= 10)){
 			switch (dato%16){

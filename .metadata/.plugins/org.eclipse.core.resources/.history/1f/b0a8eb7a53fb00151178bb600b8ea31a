@@ -1,0 +1,19 @@
+package ejemplo2;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Vehiculo {
+	
+	// Atributos
+	private String matricula;
+	private String marca;
+	private String modelo;
+	
+	// Métodos
+	@Override
+	public String toString() {
+		return "Vehiculo [matricula=" + matricula + ", marca=" + marca + ", modelo=" + modelo + "]";
+	}
+}

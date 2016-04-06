@@ -9,13 +9,12 @@ public class Ejercicio2 {
 		
 	}
 	
-	public static int transforma(int dato){
+	public static long transforma(long dato){
 		String binario = "";
-		
-		for (int i = dato; i > 0; i/=2){
-			binario = (i%2) + "" + binario;
+		for (long i = dato; i > 0; i/=2){
+			binario = (i%2) + binario;
 		}
-		return Integer.parseInt(binario);
+		return Long.parseLong(binario);
 	}
 	
 }

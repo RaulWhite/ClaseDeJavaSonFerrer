@@ -1,0 +1,15 @@
+package ejemplo2;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

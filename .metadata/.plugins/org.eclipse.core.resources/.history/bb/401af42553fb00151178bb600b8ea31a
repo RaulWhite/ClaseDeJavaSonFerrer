@@ -1,0 +1,9 @@
+package ejemplo2;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Moto extends Vehiculo{
+	
+}
