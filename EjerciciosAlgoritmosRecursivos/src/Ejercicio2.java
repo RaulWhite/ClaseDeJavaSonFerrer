@@ -11,8 +11,9 @@ public class Ejercicio2 {
 	
 	public static long transforma(long dato){
 		String binario = "";
-		for (long i = dato; i > 0; i/=2){
-			binario = (i%2) + binario;
+		while (dato > 0){
+			binario = (dato%2) + binario;
+			dato/=2;
 		}
 		return Long.parseLong(binario);
 	}

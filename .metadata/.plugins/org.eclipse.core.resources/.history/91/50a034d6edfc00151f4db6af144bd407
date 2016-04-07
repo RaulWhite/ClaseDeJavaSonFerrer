@@ -1,0 +1,24 @@
+package ejemplo3;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Computadora comp1 = new Computadora();
+		
+		comp1.setModeloCPU("Generico");
+		comp1.setNumNucleos(1);
+		comp1.setCantMemoria("128MB");
+		comp1.setTipoMemoria("Generica");
+		
+		Smartphone s1 = new Smartphone()P;
+		
+		
+		
+	}
+	
+}

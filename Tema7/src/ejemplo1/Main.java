@@ -4,8 +4,8 @@ package ejemplo1;
  */
 public class Main {
 	public static void main(String[] args) {
-
-		Persona p = new Persona();
+		
+		Persona p = new Cliente();
 
 		p.setNombre("Carlos");
 		p.setApellidos("Sogorb");
@@ -26,5 +26,10 @@ public class Main {
 		e.setApellidos("Sánchez");
 		e.setCategoriaEmpleado(1);
 		e.mostrar();
+		
+		Persona p1;
+		
+		p1 = new Cliente();
+
 	}
 }

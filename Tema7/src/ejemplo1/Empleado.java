@@ -19,4 +19,9 @@ public class Empleado extends Persona {
 		super.mostrar();
 		System.out.println("Categoría de empleado: " + categoriaEmpleado);
 	}
+
+	@Override
+	public void darDeAlta() {
+		
+	}
 }

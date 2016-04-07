@@ -19,5 +19,14 @@ public class Cliente extends Persona {
 		super.mostrar();
 		System.out.println("Visa: " + visa);
 	}
+	
+	public void saluda(){
+		System.out.println("Hola.");
+	}
+
+	@Override
+	public void darDeAlta() {
+		
+	}
 
 }

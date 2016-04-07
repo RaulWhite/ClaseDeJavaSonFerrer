@@ -2,7 +2,7 @@ package ejemplo1;
 /**
  * @author Raúl Blanco Rama
  */
-public class Persona {
+public abstract class Persona {
 
 	private String dni;
 	private String nombre;
@@ -13,6 +13,8 @@ public class Persona {
 				+ ", Apellidos: " + apellidos);
 	}
 
+	public abstract void darDeAlta();
+	
 	public String getDni() {
 		return dni;
 	}
