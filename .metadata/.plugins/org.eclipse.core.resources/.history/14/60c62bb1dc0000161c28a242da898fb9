@@ -1,0 +1,25 @@
+package excepciones;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class PruebaExcepciones {
+
+	public static void main(String[] args) {
+		
+		String entrada = "2";
+		
+		int numero = "";
+		
+		try {
+			numero = Integer.parseInt(entrada);
+		} catch (Exception e) {
+			System.out.println("Eso no es un número");
+		}
+		
+		System.out.println(numero);
+		
+	}
+	
+}

@@ -8,39 +8,26 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-//		Computadora comp1 = new Computadora();
-//		
-//		comp1.setModeloCPU("Generico");
-//		comp1.setNumNucleos(1);
-//		comp1.setCantMemoria("128MB");
-//		comp1.setTipoMemoria("Generica");
+		Circulo c = new Circulo();
 		
-		Smartphone s1 = new Smartphone();
+		c.mostrar();
 		
-		s1.setModeloCPU("Qualcomm 615");
-		s1.setNumNucleos(8);
-		s1.setCantMemoria("3GB");
-		s1.setTipoMemoria("LDDR3");
-		s1.setPulgadas(5);
-		s1.setPeso(0.18);
+		Figura2D unaFigura; // En esta variable podremos colocar un objeto cuya clase implemente la interfaz Figura2D
 		
-		PC pc1 = new PC();
+//		unaFigura = new Circulo();
+//		unaFigura = new Rombo();		// Solo tendrán los métodos de la interfaz del tipo de objeto, a no ser que se use un cast
+//		unaFigura = new Cuadrado();
 		
-		pc1.setModeloCPU("Intel Core i3 2120");
-		pc1.setNumNucleos(2);
-		pc1.setCantMemoria("10GB");
-		pc1.setTipoMemoria("DDR3");
-		pc1.setTamaño("m-ATX");
-		pc1.setTieneGPUExtra(true);
+		Figura2D unCuadrado = new Cuadrado();
 		
-		Consola c1 = new Consola();
+		((Cuadrado)unCuadrado).mostrar();
 		
-		c1.setModeloCPU("AMD Jaguar x64");
-		c1.setNumNucleos(8);
-		c1.setCantMemoria("8GB");
-		c1.setTipoMemoria("GDDR5");
-		c1.setMarca("Sony");
-		c1.setModelo("PlayStation 4");
+		// Pruebas usando una interfaz para almacenar constantes
+		
+		int diaCita;
+		diaCita = DiasSemana.MARTES;
+		
+		System.out.println(diaCita);
 		
 	}
 	

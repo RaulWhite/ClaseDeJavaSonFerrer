@@ -1,0 +1,17 @@
+package ejemplo3;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Circulo c = new Circulo();
+		
+		Figura2D unaFigura; // En esta variable podremos colocar un objeto cuya clase implemente la interfaz Figura2D 
+		
+	}
+	
+}

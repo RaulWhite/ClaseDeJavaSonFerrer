@@ -1,0 +1,30 @@
+package ejemplo3;
+
+public class Cuadrado extends Figura implements Mostrable, Figura2D {
+
+private double lado;
+	
+	@Override
+	public void mostrar() {
+		
+	}
+
+	@Override
+	public double area() {
+		return Math.pow(lado, 2);
+	}
+
+	@Override
+	public double perimetro() {
+		return 2 * (Math.PI * radio);
+	}
+	
+	public double getRadio() {
+		return lado;
+	}
+
+	public void setRadio(double radio) {
+		this.lado = lado;
+	}
+	
+}

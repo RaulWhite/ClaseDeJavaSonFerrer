@@ -1,0 +1,24 @@
+package ejemplo3;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Circulo extends Figura implements Mostrable, Figura2D{
+	
+	@Override
+	public void mostrar() {
+				
+	}
+
+	@Override
+	public double area() {
+
+	}
+
+	@Override
+	public double perimetro() {
+
+	}
+	
+}

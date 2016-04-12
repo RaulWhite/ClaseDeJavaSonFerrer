@@ -24,9 +24,9 @@ public class Cliente extends Persona {
 		System.out.println("Hola.");
 	}
 
-	@Override
+	/*@Override
 	public void darDeAlta() {
 		
-	}
+	}*/
 
 }

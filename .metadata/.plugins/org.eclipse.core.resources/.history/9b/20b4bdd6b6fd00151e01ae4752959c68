@@ -1,0 +1,46 @@
+package ejemplo1;
+/**
+ * @author Raúl Blanco Rama
+ */
+public class Main {
+	public static void main(String[] args) {
+		
+		Persona p = new Cliente();
+
+		p.setNombre("Carlos");
+		p.setApellidos("Sogorb");
+		p.setDni("87128162T");
+
+		p.mostrar();
+
+		Persona q = new Cliente();
+
+		q.setNombre("Carlos");
+		q.setApellidos("Sogorb");
+		q.setDni("87128162T");
+
+		q.mostrar();
+		
+		Cliente c = new Cliente();
+		c.setNombre("Pepe");
+		c.setApellidos("García");
+		c.setDni("27263572H");
+		c.setVisa("6251-6127-1211-1213");
+		c.mostrar();
+
+		Empleado e = new Empleado();
+		e.setDni("2328392");
+		e.setNombre("Pablo");
+		e.setApellidos("Sánchez");
+		e.setCategoriaEmpleado(1);
+		e.mostrar();
+		
+		Persona p1;
+		
+		p1 = new Cliente();
+		
+		System.out.println(p.equals(q));
+		
+
+	}
+}

@@ -20,8 +20,8 @@ public class Empleado extends Persona {
 		System.out.println("Categoría de empleado: " + categoriaEmpleado);
 	}
 
-	@Override
+	/*@Override
 	public void darDeAlta() {
 		
-	}
+	}*/
 }

@@ -1,0 +1,25 @@
+package excepciones;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class PruebaExcepciones {
+
+	public static void main(String[] args) {
+		
+		String dividendo = "20";
+		String divisor = "3";
+				
+		int resultado = 0;
+		
+		try {
+			int a = Integer.parseInt(dividendo);
+			int b = Integer.parseInt(divisor);
+		} catch (Exception e) {
+			
+		}
+		
+	}
+	
+}

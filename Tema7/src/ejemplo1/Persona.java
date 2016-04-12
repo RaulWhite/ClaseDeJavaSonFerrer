@@ -2,7 +2,7 @@ package ejemplo1;
 /**
  * @author Raúl Blanco Rama
  */
-public abstract class Persona {
+public /*abstract*/ class Persona {
 
 	private String dni;
 	private String nombre;
@@ -13,7 +13,7 @@ public abstract class Persona {
 				+ ", Apellidos: " + apellidos);
 	}
 
-	public abstract void darDeAlta();
+	/*public abstract void darDeAlta();*/
 	
 	public String getDni() {
 		return dni;
@@ -39,5 +39,19 @@ public abstract class Persona {
 		this.apellidos = apellidos;
 	}
 	
+	@Override
+	public boolean equals(Object o){		
+		if(!(o instanceof Persona)){
+			return false;
+		}
+		
+		Persona p = (Persona) o;
+		
+		if (dni.equals(p.getDni())){
+			return true;
+		} else {
+			return false;
+		}
+	}
 	
 }
