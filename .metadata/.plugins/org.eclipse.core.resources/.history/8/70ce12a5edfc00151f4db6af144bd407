@@ -1,8 +1,0 @@
-package ejemplo3;
-
-public class Consola {
-
-	private String marca;
-	private String modelo;
-	
-}

@@ -1,7 +1,0 @@
-package ejemplo3;
-
-public class Smartphone extends Computadora {
-
-	private double pulgadas;
-	
-}

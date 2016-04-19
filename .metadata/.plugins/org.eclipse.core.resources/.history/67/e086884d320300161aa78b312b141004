@@ -16,6 +16,7 @@ public class PruebaExcepciones {
 			int b = Integer.parseInt(divisor);
 			int resultado = a/b;
 			System.out.println("La división da " + resultado);
+			throw new Exception();
 		} catch (NumberFormatException nfe) {
 			System.out.println("Al menos uno de los operandos no es un número");
 		} catch (ArithmeticException ae){

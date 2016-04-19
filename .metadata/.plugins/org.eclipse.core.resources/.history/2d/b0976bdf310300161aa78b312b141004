@@ -9,7 +9,7 @@ public class PruebaExcepciones {
 	public static void main(String[] args) {
 		
 		String dividendo = "20";
-		String divisor = "10";
+		String divisor = "0";
 				
 		try {
 			int a = Integer.parseInt(dividendo);
