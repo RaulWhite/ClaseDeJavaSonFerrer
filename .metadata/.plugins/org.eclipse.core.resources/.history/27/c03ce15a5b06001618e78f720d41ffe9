@@ -1,0 +1,19 @@
+package practica1;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+//		Medio me1 = new Medio();
+		Mp3 mp1 = new Mp3("Welcome to the Jungle", 240, "Guns n' Roses", "Rock", 1);
+		Ogg o1 = new Ogg("Highway to Hell", 180, "AC/DC", "Rock", 1);
+		
+		Guardable g1 = new Ogg();
+		
+	}
+	
+}

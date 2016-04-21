@@ -1,0 +1,19 @@
+package practica1;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Biblioteca {
+
+	private Mp3[] biblioteca = new Mp3[1000];
+	
+	public void addSong(Mp3 cancion) {
+		
+	}
+	
+	public void getSong(int id) {
+		
+	}
+	
+}
