@@ -31,4 +31,9 @@ public class Mp3 extends Musica implements Guardable {
 		return true;
 	}
 	
+	@Override
+	public String toString(){
+		return ("ID: " + this.getID() + ". " + this.getNombre() + " - " + this.getArtista());
+	}
+	
 }

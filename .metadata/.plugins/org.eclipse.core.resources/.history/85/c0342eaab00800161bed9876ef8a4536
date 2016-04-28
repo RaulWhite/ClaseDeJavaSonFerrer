@@ -1,0 +1,17 @@
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Ejercicio6 {
+
+	public static void main(String[] args) {
+		
+		int numeros[] = {5, 2, 8, 69, 23, 1, 7};
+		
+	}
+	
+	public int buscaMinimo(int[] array){
+		return 0;
+	}
+	
+}

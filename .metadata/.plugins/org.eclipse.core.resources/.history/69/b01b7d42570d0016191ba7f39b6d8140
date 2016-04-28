@@ -1,0 +1,17 @@
+package parte1;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+import java.awt.*;
+import javax.swing.*;
+
+public class Etiquetas {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

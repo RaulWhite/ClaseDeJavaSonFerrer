@@ -10,6 +10,7 @@ public class Main {
 		
 //		Medio me1 = new Medio();
 		Mp3 mp1 = new Mp3(1, "Welcome to the Jungle", 240, "Guns n' Roses", "Rock", 1);
+		Mp3 mp2 = new Mp3(2, "Highway to Hell", 300, "AC/DC", "Rock", 3);
 		Ogg o1 = new Ogg(2, "Highway to Hell", 300, "AC/DC", "Rock", 3);
 		
 		Medio m1 = new Mp3(3, "Welcome to the Jungle", 240, "Guns n' Roses", "Rock", 1);
@@ -25,13 +26,21 @@ public class Main {
 		
 		Biblioteca biblio = new Biblioteca();
 		biblio.addSong(mp1);
+		biblio.addSong(mp2);
 		biblio.addSong(mp1);
+		biblio.addSong(mp2);
 		biblio.addSong(mp1);
-		biblio.addSong(mp1);
-		biblio.addSong(mp1);
-		biblio.addSong(mp1);
+		biblio.addSong(mp2);
 		
 		System.out.println((biblio.getSong(1)).getNombre());
+		
+		System.out.println(biblio.buscaPrimerAlfa());
+		
+		biblio.delSong(2);
+		
+		biblio.mostrar();
+		
+		System.out.println(biblio.busqueda("Highway to Hell"));
 		
 	}
 	
