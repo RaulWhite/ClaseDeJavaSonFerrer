@@ -1,0 +1,26 @@
+package parte1;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class ComboBoxes extends JFrame {
+
+	public static void main(String[] args) {
+		
+		ComboBoxes comboBoxes = new ComboBoxes();
+		
+	}
+	
+	public ComboBoxes(){
+		
+		super("Combo Boxes");
+		setSize(350,100);
+		
+	}
+	
+}

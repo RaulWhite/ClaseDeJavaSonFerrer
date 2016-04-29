@@ -1,0 +1,13 @@
+package parte1;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.JFrame;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Checkboxes extends JFrame {
+
+}
