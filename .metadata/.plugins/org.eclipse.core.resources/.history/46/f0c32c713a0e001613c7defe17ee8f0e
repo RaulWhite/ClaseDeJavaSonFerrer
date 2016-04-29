@@ -1,0 +1,31 @@
+package parte1;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class CuadroDeDialogo extends JFrame {
+
+	public static void main(String[] args) {
+		
+		new CuadroDeDialogo();
+		
+	}
+
+	public CuadroDeDialogo(){
+		
+		super("Pruebas con cuadros de diálogo");
+		setSize(35,200);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		
+		
+		setVisible(true);
+		
+	}
+	
+}
