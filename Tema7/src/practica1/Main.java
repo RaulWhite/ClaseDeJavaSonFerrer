@@ -38,9 +38,17 @@ public class Main {
 		
 		biblio.delSong(2);
 		
+		System.out.println(biblio.busqueda("Highway to Hell"));
+		
 		biblio.mostrar();
 		
-		System.out.println(biblio.busqueda("Highway to Hell"));
+		biblio.ordenar();
+		biblio.mostrar();
+		
+		System.out.println("---");
+		
+		biblio.compactar();
+		biblio.mostrar();
 		
 	}
 	

@@ -90,8 +90,41 @@ public class Biblioteca {
 		}
 	}
 	
-	public void ordenar(){
-		// TODO: Ordenar el array alfabéticamente por nombre de canción
+	public void ordenar() {
+		Mp3 aux;
+		for (int i = 0; i < biblioteca.length; i++) {
+			if (biblioteca[i] == null){
+				continue;
+			}
+			for (int j = i + 1; j < biblioteca.length; j++) {
+				if (biblioteca[j] == null){
+					continue;
+				}
+				if (biblioteca[j].getNombre().compareTo(biblioteca[i].getNombre()) < 0) {
+					aux = biblioteca[i];
+					biblioteca[i] = biblioteca[j];
+					biblioteca[j] = aux;
+				}
+			}
+		}
+	}
+	
+	public void compactar() {
+		Mp3 aux;
+		for (int i = 0; i < biblioteca.length; i++) {
+			if (biblioteca[i] != null){
+				continue;
+			}
+			for (int j = i + 1; j < biblioteca.length; j++) {
+				if (biblioteca[j] == null){
+					continue;
+				} else {
+					biblioteca[i] = biblioteca[j];
+					biblioteca[j] = null;
+					break;
+				}
+			}
+		}
 	}
 	
 }

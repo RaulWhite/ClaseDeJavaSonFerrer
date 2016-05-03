@@ -1,0 +1,95 @@
+package actividades1;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Actividades1 extends JFrame{
+
+	public static void main(String[] args) {
+		
+		new Actividades1();
+		
+	}
+	
+	public Actividades1() {
+		
+		super("Actividades 1 GUI");
+		setSize(350,100);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		setLayout(new FlowLayout());
+		
+		JButton ej1Btn = new JButton("Ejercicio 1");
+		JButton ej2Btn = new JButton("Ejercicio 2");
+		JButton ej3Btn = new JButton("Ejercicio 3");
+		JButton ej4Btn = new JButton("Ejercicio 4");
+		JButton ej5Btn = new JButton("Ejercicio 5");
+		
+		ej1Btn.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Ejercicio1();
+			}
+		});
+		
+		ej2Btn.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Ejercicio2();
+			}
+		});
+
+		ej3Btn.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Ejercicio3();
+			}
+		});
+
+		ej4Btn.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Ejercicio4();
+			}
+		});
+
+		ej5Btn.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Ejercicio5();
+			}
+		});
+
+		
+		add(ej1Btn);
+		add(ej2Btn);
+		add(ej3Btn);
+		add(ej4Btn);
+		add(ej5Btn);
+		
+		setVisible(true);
+		
+	}
+	
+	public static void Ejercicio1(){
+		
+	}
+	
+	public static void Ejercicio1(){
+		
+	}
+
+	public static void Ejercicio1(){
+		
+	}
+	
+	public static void Ejercicio1(){
+		
+	}
+	
+	public static void Ejercicio1(){
+		
+	}
+	
+}
