@@ -1,0 +1,35 @@
+package parte1;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Sliders extends JFrame {
+
+	public static void main(String[] args) {
+		
+		new Sliders();
+		
+	}
+	
+	public Sliders(){
+		
+		super("Volumen");
+		setSize(300,50);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		setLayout(new FlowLayout());
+		
+		JSlider control = new JSlider(JSlider.HORIZONTAL, 0, 100, 78);
+		
+		add(control);
+		
+		setVisible(true);
+		
+	}
+	
+}

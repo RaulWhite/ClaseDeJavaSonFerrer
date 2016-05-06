@@ -30,10 +30,10 @@ public class Actividades1 extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showConfirmDialog(null,
-											"¿Formater el disco duro?",
-											"Confirmación de formateo",
-											JOptionPane.OK_CANCEL_OPTION,
-											JOptionPane.WARNING_MESSAGE);
+											 "¿Formater el disco duro?",
+											 "Confirmación de formateo",
+											 JOptionPane.OK_CANCEL_OPTION,
+											 JOptionPane.WARNING_MESSAGE);
 				}
 		});
 		
@@ -41,9 +41,9 @@ public class Actividades1 extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showInputDialog(null,
-											"Escribe tu DNI:",
-											"Confirmación de identidad",
-											JOptionPane.QUESTION_MESSAGE);
+										   "Escribe tu DNI:",
+										   "Confirmación de identidad",
+										   JOptionPane.QUESTION_MESSAGE);
 			}
 		});
 
@@ -51,9 +51,9 @@ public class Actividades1 extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showMessageDialog(null,
-											"Se ha detectado un escaneo de red desde la IP 192.168.1.51",
-											"Alerta de seguridad",
-											JOptionPane.WARNING_MESSAGE);
+											 "Se ha detectado un escaneo de red desde la IP 192.168.1.51",
+											 "Alerta de seguridad",
+											 JOptionPane.WARNING_MESSAGE);
 			}
 		});
 
@@ -86,7 +86,6 @@ public class Actividades1 extends JFrame{
 											hostings[1]);
 			}
 		});
-
 		
 		add(ej1Btn);
 		add(ej2Btn);

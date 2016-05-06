@@ -41,7 +41,7 @@ public class Biblioteca {
 	
 	public boolean delSong(int id) {
 		for (int i = 0; i < biblioteca.length; i++){
-			if (biblioteca[i].getID() == id){
+			if (biblioteca[i] != null && biblioteca[i].getID() == id){
 				biblioteca[i] = null;
 				System.out.println("Se ha eliminado la canción de la posición " + i);
 				return true;
@@ -93,35 +93,27 @@ public class Biblioteca {
 	public void ordenar() {
 		Mp3 aux;
 		for (int i = 0; i < biblioteca.length; i++) {
-			if (biblioteca[i] == null){
-				continue;
-			}
-			for (int j = i + 1; j < biblioteca.length; j++) {
-				if (biblioteca[j] == null){
-					continue;
-				}
-				if (biblioteca[j].getNombre().compareTo(biblioteca[i].getNombre()) < 0) {
-					aux = biblioteca[i];
-					biblioteca[i] = biblioteca[j];
-					biblioteca[j] = aux;
+			if (biblioteca[i] != null){
+				for (int j = i + 1; j < biblioteca.length; j++) {
+					if (biblioteca[j] != null && biblioteca[j].getNombre().compareTo(biblioteca[i].getNombre()) < 0) {
+						aux = biblioteca[i];
+						biblioteca[i] = biblioteca[j];
+						biblioteca[j] = aux;
+					}
 				}
 			}
 		}
 	}
 	
 	public void compactar() {
-		Mp3 aux;
 		for (int i = 0; i < biblioteca.length; i++) {
-			if (biblioteca[i] != null){
-				continue;
-			}
-			for (int j = i + 1; j < biblioteca.length; j++) {
-				if (biblioteca[j] == null){
-					continue;
-				} else {
-					biblioteca[i] = biblioteca[j];
-					biblioteca[j] = null;
-					break;
+			if (biblioteca[i] == null){
+				for (int j = i + 1; j < biblioteca.length; j++) {
+					if (biblioteca[j] != null) {
+						biblioteca[i] = biblioteca[j];
+						biblioteca[j] = null;
+						break;
+					}
 				}
 			}
 		}
