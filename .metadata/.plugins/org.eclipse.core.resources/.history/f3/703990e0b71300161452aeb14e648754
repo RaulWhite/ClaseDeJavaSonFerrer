@@ -1,0 +1,35 @@
+package parte1;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class BarraDeHeramientas extends JFrame {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+	public BarraDeHeramientas() {
+		
+		super("Barra de Herramientas");
+		setSize(400, 300);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLayout(new BorderLayout());
+		new TemaNimbus(this);
+		
+		JButton btnInicio = new JButton(new ImageIcon("icons/17.png"));
+		
+		JToolBar barra = new JToolBar();
+		
+		setVisible(true);
+		
+	}
+	
+}

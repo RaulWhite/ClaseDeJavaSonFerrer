@@ -1,0 +1,39 @@
+package parte1;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class BotonesGraficos extends JFrame {
+
+	public static void main(String[] args) {
+		
+		new BotonesGraficos();
+		
+	}
+	
+	public BotonesGraficos(){
+		
+		super("Botones Gráficos");
+		setSize(300,200);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		setLayout(new FlowLayout());
+		
+		ImageIcon img1 = new ImageIcon("icons/10.png");
+		
+		JButton btn1 = new JButton("Cara", img1);
+		JButton btn2 = new JButton(new ImageIcon("icons/74.png"));
+		
+		add(btn1);
+		add(btn2);
+		
+		setVisible(true);
+		
+	}
+	
+}
