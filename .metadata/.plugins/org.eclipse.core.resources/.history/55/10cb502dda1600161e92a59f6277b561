@@ -1,0 +1,37 @@
+package parte1;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Menu extends JFrame {
+
+	public static void main(String[] args) {
+	
+		new Menu();
+		
+	}
+	
+	public Menu(){
+		
+		super("Menú");
+		setSize(300,200);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLayout(new FlowLayout());
+		
+		JMenuItem itemAbrir = new JMenuItem("Abrir");
+		JMenuItem itemCerrar = new JMenuItem("Cerrar");
+		JMenuItem itemGuardar = new JMenuItem("Guardar");
+		JMenuItem itemGuardarComo = new JMenuItem("Guardar como...");
+		
+		
+		
+		setVisible(true);
+		
+	}
+	
+}

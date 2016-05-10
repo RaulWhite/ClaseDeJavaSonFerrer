@@ -1,0 +1,25 @@
+package parte1;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class ListaConBarras extends JFrame {
+
+	public static void main(String[] args) {
+		
+		new ListaConBarras();
+		
+	}
+	
+	public ListaConBarras() {
+	
+		
+		
+	}
+	
+}

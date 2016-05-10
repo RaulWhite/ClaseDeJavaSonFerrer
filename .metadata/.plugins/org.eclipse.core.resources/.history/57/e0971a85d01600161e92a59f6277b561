@@ -1,0 +1,40 @@
+package parte1;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class ListaConBarras extends JFrame {
+
+	public static void main(String[] args) {
+		
+		new ListaConBarras();
+		
+	}
+	
+	public ListaConBarras() {
+	
+		super("Lista con barras");
+		setSize(300, 200);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLayout(new FlowLayout());
+		
+		String categorias[] = { "1º de ESO", "2º de ESO", "3º de ESO",
+		"4º de ESO", "1º de Bachillerato", "2º de Bachillerato",
+		"CFGM de Informática", "CFGS de Informática",
+		"FP básica de Informática" };
+		
+		JList lista = new JList(categorias);
+		JScrollPane panelScroll = new JScrollPane(lista);
+		
+		add(panelScroll);
+		
+		setVisible(true);
+		
+	}
+	
+}
