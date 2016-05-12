@@ -1,0 +1,33 @@
+package parte2;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class EjemploLayouts extends JFrame {
+	
+	public static void main(String[] args) {
+		
+		new EjemploLayouts();
+		
+	}
+	
+	public EjemploLayouts() {
+		super("Biblioteca");
+		setSize(400,200);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		setLayout(new GridLayout(1,2));
+		
+		JPanel panelEntrada = new JPanel();
+		
+		panelEntrada.setLayout(new FlowLayout());
+		
+		setVisible(true);		
+	}
+	
+}
