@@ -1,9 +1,0 @@
-package parte1;
-
-public class TemaNimbus {
-
-	public TemaNimbus(){
-		
-	}
-	
-}
