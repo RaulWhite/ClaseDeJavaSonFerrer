@@ -1,0 +1,45 @@
+package actividades2;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Act2_4 extends JFrame {
+
+	public static void main(String[] args) {
+		
+		new Act2_4();
+		
+	}
+	
+	public Act2_4() {
+		
+		super("Suscripción");
+		setSize(250,300);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLayout(new FlowLayout());
+		
+		JLabel lblNombre = new JLabel("Nombre");
+		
+		JLabel lblEmail = new JLabel("Email");
+		
+		JTextArea txtMotivo = new JTextArea(5, 20);
+		JScrollPane scrMotivo = new JScrollPane(txtMotivo);
+		
+		JButton btnEnviar = new JButton("Enviar");
+		
+		JCheckBox chkCorreo = new JCheckBox("Recibir información por correo");
+		
+		add(scrMotivo);
+		add(chkCorreo);
+		add(btnEnviar);
+		
+		setVisible(true);
+		
+	}
+	
+}
