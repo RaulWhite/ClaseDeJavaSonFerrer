@@ -1,0 +1,21 @@
+package parte3;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class DosBotones extends JFrame {
+
+	public static void main(String[] args) {
+		
+		new DosBotones();
+		
+	}
+	
+	public DosBotones() {
+		
+		
+		
+	}
+	
+}

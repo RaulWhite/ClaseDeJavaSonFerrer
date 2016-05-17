@@ -1,0 +1,24 @@
+package parte3;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class DosBotones extends JFrame {
+
+	public static void main(String[] args) {
+		
+		new DosBotones();
+		
+	}
+	
+	public DosBotones() {
+		
+		super("Pulsa un botón");
+		setSize(400,300);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLayout(new FlowLayout());
+		
+	}
+	
+}

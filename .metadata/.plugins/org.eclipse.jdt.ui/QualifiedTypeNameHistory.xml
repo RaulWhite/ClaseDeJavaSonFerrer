@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="biblioteca.Autor"/>
-<fullyQualifiedTypeName name="biblioteca.Libro"/>
-<fullyQualifiedTypeName name="algebra.Polinomio"/>
 <fullyQualifiedTypeName name="geometria.Punto"/>
 <fullyQualifiedTypeName name="auxiliar.Alumno"/>
 <fullyQualifiedTypeName name="auxiliar.Grupo"/>
@@ -44,20 +41,23 @@
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="javax.swing.BoxLayout"/>
 <fullyQualifiedTypeName name="java.awt.GridLayout"/>
-<fullyQualifiedTypeName name="parte1.TemaNimbus"/>
 <fullyQualifiedTypeName name="java.awt.Panel"/>
 <fullyQualifiedTypeName name="actividades2.Act2_1"/>
 <fullyQualifiedTypeName name="javax.swing.JSlider"/>
 <fullyQualifiedTypeName name="javax.swing.JTextArea"/>
 <fullyQualifiedTypeName name="javax.swing.JScrollPane"/>
 <fullyQualifiedTypeName name="javax.swing.JCheckBox"/>
-<fullyQualifiedTypeName name="javax.swing.JTextField"/>
 <fullyQualifiedTypeName name="parte2.PruebasBorder"/>
 <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
 <fullyQualifiedTypeName name="actionListener1.Boton"/>
-<fullyQualifiedTypeName name="java.awt.FlowLayout"/>
-<fullyQualifiedTypeName name="javax.swing.JButton"/>
 <fullyQualifiedTypeName name="actionListener1.GestorEventos"/>
-<fullyQualifiedTypeName name="javax.swing.JLabel"/>
 <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+<fullyQualifiedTypeName name="parte3.MediaAritmetica"/>
+<fullyQualifiedTypeName name="javax.swing.JTextField"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="parte1.TemaNimbus"/>
+<fullyQualifiedTypeName name="java.awt.event.FocusListener"/>
+<fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+<fullyQualifiedTypeName name="javax.swing.JLabel"/>
+<fullyQualifiedTypeName name="javax.swing.JButton"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,25 @@
+package parte3;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class TresBotones extends JFrame implements ActionListener {
+
+	public static void main(String[] args) {
+		
+		new TresBotones();
+		
+	}
+	
+	JButton btnRojo;
+	JButton btnNegro;
+	JButton btnVerde;
+	
+	public TresBotones() {
+		
+		
+		
+	}
+	
+}

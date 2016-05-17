@@ -1,0 +1,59 @@
+package parte3;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class MediaAritmetica extends JFrame implements FocusListener {
+
+	public static void main(String[] args) {
+		
+		new MediaAritmetica();
+		
+	}
+	
+	JTextField txtMedia1;
+	JTextField txtMedia2;
+	JTextField txtMedia3;
+	
+	JLabel lblMedia;
+	
+	public MediaAritmetica() {
+		
+		super("Promedios");
+		setSize(250, 50);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLayout(new FlowLayout());
+		
+		txtMedia1 = new JTextField("0", 5);
+		txtMedia2 = new JTextField("0", 5);
+		txtMedia3 = new JTextField("0", 5);
+		
+		lblMedia = new JLabel("La media es 0.0");
+		
+		add(txtMedia1);
+		add(txtMedia2);
+		add(txtMedia3);
+		add(lblMedia);
+		
+		setVisible(true);
+		
+	}
+
+	@Override
+	public void focusGained(FocusEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void focusLost(FocusEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

@@ -1,0 +1,21 @@
+package parte3;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+
+
+public class FocoBotones extends JFrame implements FocusListener {
+
+	public static void main(String[] args) {
+		
+		new FocoBotones();
+		
+	}
+	
+	public FocoBotones() {
+		
+	}
+	
+}

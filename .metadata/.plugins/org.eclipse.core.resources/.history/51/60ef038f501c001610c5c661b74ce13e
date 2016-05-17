@@ -1,0 +1,45 @@
+package parte3;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class DosBotones extends JFrame implements ActionListener {
+
+	public static void main(String[] args) {
+		
+		new DosBotones();
+		
+	}
+	
+	JLabel lblInfo;
+	
+	public DosBotones() {
+		
+		super("Pulsa un botón");
+		setSize(250,80)	;
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLayout(new FlowLayout());
+		
+		JButton btnRojo = new JButton("Rojo");
+		JButton btnAzul = new JButton("Azul");
+		lblInfo = new JLabel("No has pulsado todavía");
+		
+		btnRojo.addActionListener(this);
+		btnAzul.addActionListener(this);
+		
+		add(btnRojo);
+		add(btnAzul);
+		add(lblInfo);
+		
+		setVisible(true);
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		lblInfo.setText("Se ha pulsado un botón");
+		System.out.println(e);
+	}
+	
+}
