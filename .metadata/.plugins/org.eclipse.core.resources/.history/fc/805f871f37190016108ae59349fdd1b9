@@ -1,9 +1,0 @@
-package actionListener1;
-
-/**
- * @author Raúl Blanco Rama
- */
-
-public class GestorEventos {
-
-}

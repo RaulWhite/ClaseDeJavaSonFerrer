@@ -1,0 +1,34 @@
+package parte3;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Coordenadas extends JFrame implements MouseListener {
+
+	public static void main(String[] args) {
+		
+		new Coordenadas();
+		
+	}
+	
+	private JLabel lblCoor;
+	
+	public Coordenadas() {
+		
+		super("Coordenadas");
+		setSize(500, 400);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLayout(new FlowLayout());
+		
+		lblCoor = new JLabel("Haz clic en la ventana");
+		
+		setVisible(true);
+		
+	}
+	
+}
