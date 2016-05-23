@@ -1,0 +1,25 @@
+package actividades3;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Act3_4 extends JFrame {
+
+	public static void main(String[] args) {
+		
+		new Act3_4();
+		
+	}
+	
+	public Act3_4() {
+		
+		
+		
+	}
+	
+}

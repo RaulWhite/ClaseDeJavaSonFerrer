@@ -23,15 +23,15 @@ public class BarrasDeProgreso extends JFrame {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLayout(new FlowLayout());
 		
-		JProgressBar prgComlbustible = new JProgressBar(0, 50);
-		prgComlbustible.setValue(24);
-		prgComlbustible.setStringPainted(true);
-		prgComlbustible.setForeground(new Color(0,80,80));
-		prgComlbustible.setBackground(new Color(50, 200, 150));
+		JProgressBar prgCombustible = new JProgressBar(0, 50);
+		prgCombustible.setValue(24);
+		prgCombustible.setStringPainted(true);
+		prgCombustible.setForeground(new Color(0,80,80));
+		prgCombustible.setBackground(new Color(50, 200, 150));
 		
 		getContentPane().setBackground(new Color(50, 50, 200));
 		
-		add(prgComlbustible);
+		add(prgCombustible);
 		
 		setVisible(true);
 		

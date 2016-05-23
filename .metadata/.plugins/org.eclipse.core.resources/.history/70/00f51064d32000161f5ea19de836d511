@@ -1,0 +1,51 @@
+package actividades3;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Act3_5 extends JFrame {
+
+	public static void main(String[] args) {
+		
+		new Act3_5();
+		
+	}
+	
+	public Act3_5() {
+		
+		super("Opciones de la aplicación");
+		setSize(400, 200);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLayout(new FlowLayout());
+		
+		//Panel de pestañas 1
+		JPanel panelEditor = new JPanel();
+		
+		JCheckBox chkClave = new JCheckBox("Resaltar palabras clave");
+		JCheckBox chkXML = new JCheckBox("Guardar como XML");
+		
+		panelEditor.add(chkClave);
+		panelEditor.add(chkXML);
+		
+		//Panel de pestañas 2
+		JPanel panelVentanas = new JPanel();
+		
+		JCheckBox chkLaterales = new JCheckBox("Mostrar barras laterales");
+		JCheckBox chkMenus = new JCheckBox("Mostrar barra de menús");
+		
+		panelVentanas.add(chkLaterales);
+		panelVentanas.add(chkMenus);
+		
+		//Panel de pestañas global
+		
+		
+		setVisible(true);
+		
+	}
+	
+}
