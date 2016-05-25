@@ -1,0 +1,63 @@
+package parte3;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class EjemploMouseAdapter extends JFrame {
+
+	public static void main(String[] args) {
+		
+		new EjemploMouseAdapter();
+		
+	}
+	
+	private JLabel lblMensaje;
+	
+	public EjemploMouseAdapter() {
+		
+		super("Ejemplo de MouseAdapter");
+		setSize(400,300);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLayout(new FlowLayout());
+		
+		lblMensaje = new JLabel("Clícame");
+		add(lblMensaje);
+		
+		addMouseListener(new MouseListener() {
+			
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				lblMensaje.setText("Has hecho click");
+			}
+			
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// En desuso
+			}
+			
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// En desuso
+			}
+			
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// En desuso
+			}
+			
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// En desuso
+			}
+		});
+		
+		setVisible(true);
+		
+	}
+	
+}
