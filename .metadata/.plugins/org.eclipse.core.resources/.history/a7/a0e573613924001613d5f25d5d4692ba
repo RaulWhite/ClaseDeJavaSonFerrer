@@ -1,0 +1,19 @@
+import java.io.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class EscrituraBytes {
+
+	public static void main(String[] args) {
+		
+		try {
+			FileOutputStream salida = new FileOutputStream("numeros.dat");
+		} catch (IOException ioe) {
+			ioe.printStackTrace();
+		}
+		
+	}
+	
+}

@@ -60,7 +60,7 @@ public class Pestanyas extends JFrame {
 		panelPestanyas.addTab("Empleados ", iconEmp, panelEmpleados);
 		panelPestanyas.addTab("Proveedores", iconProv, panelProveedores);
 		
-		panelPestanyas.setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT);
+//		panelPestanyas.setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT);
 		
 		add(panelPestanyas);
 				

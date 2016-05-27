@@ -1,0 +1,27 @@
+import java.io.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Copia {
+
+	public static void main(String[] args) {
+		
+		try {
+			FileInputStream original = new FileInputStream("logo.jpg");
+			FileOutputStream copia = new FileOutputStream("logo2.jpg");
+			
+			boolean eof = false;
+			
+			while (eof == false)
+			copia.write(original.read());
+			
+			
+		} catch (IOException ioe) {
+			ioe.printStackTrace();
+		}
+		
+	}
+	
+}

@@ -9,7 +9,7 @@ import javax.swing.event.ChangeListener;
  * @author Raúl Blanco Rama
  */
 
-public class Act4_4 extends JFrame implements MouseListener {
+public class Act4_4 extends JFrame {
 
 	public static void main(String[] args) {
 		
@@ -44,19 +44,19 @@ public class Act4_4 extends JFrame implements MouseListener {
 		sldR.setMinorTickSpacing(25);
 		sldR.setPaintLabels(true);
 		sldR.setPaintTicks(true);
-		sldR.addMouseListener(this);
+		sldR.addMouseListener(eventoRaton);
 		
 		sldG.setMajorTickSpacing(50);
 		sldG.setMinorTickSpacing(25);
 		sldG.setPaintLabels(true);
 		sldG.setPaintTicks(true);
-		sldG.addMouseListener(this);
+		sldG.addMouseListener(eventoRaton);
 		
 		sldB.setMajorTickSpacing(50);
 		sldB.setMinorTickSpacing(25);
 		sldB.setPaintLabels(true);
 		sldB.setPaintTicks(true);
-		sldB.addMouseListener(this);
+		sldB.addMouseListener(eventoRaton);
 		
 		btnMuestra = new JButton("                ");
 		btnMuestra.setBackground(new Color(255, 200, 51));
@@ -79,33 +79,14 @@ public class Act4_4 extends JFrame implements MouseListener {
 		setVisible(true);
 		
 	}
-
-	@Override
-	public void mouseClicked(MouseEvent e) {
-		// En desuso
-	}
-
-	@Override
-	public void mouseEntered(MouseEvent e) {
-		// En desuso
-	}
-
-	@Override
-	public void mouseExited(MouseEvent e) {
-		// En desuso
-	}
-
-	@Override
-	public void mousePressed(MouseEvent e) {
-		// En desuso
-	}
-
-	@Override
-	public void mouseReleased(MouseEvent e) {
-		btnMuestra.setBackground(new Color(sldR.getValue(), sldG.getValue(), sldB.getValue()));
-		txtHex.setText("#" + Integer.toHexString(0x100 | sldR.getValue()).substring(1).toUpperCase() 
-							+ "" + Integer.toHexString(0x100 | sldG.getValue()).substring(1).toUpperCase() 
-							+ "" + Integer.toHexString(0x100 | sldB.getValue()).substring(1).toUpperCase());
-	}
+	
+	MouseAdapter eventoRaton = new MouseAdapter() {
+		public void mouseReleased(MouseEvent e) {
+			btnMuestra.setBackground(new Color(sldR.getValue(), sldG.getValue(), sldB.getValue()));
+			txtHex.setText("#" + Integer.toHexString(0x100 | sldR.getValue()).substring(1).toUpperCase() 
+								+ "" + Integer.toHexString(0x100 | sldG.getValue()).substring(1).toUpperCase() 
+								+ "" + Integer.toHexString(0x100 | sldB.getValue()).substring(1).toUpperCase());
+			}
+	};
 	
 }

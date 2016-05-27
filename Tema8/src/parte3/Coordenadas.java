@@ -51,6 +51,7 @@ public class Coordenadas extends JFrame implements MouseListener {
 		} else if (e.getButton() == MouseEvent.BUTTON3) {
 			lblBtn.setText("Click derecho");
 		}
+		
 	}
 
 	@Override
