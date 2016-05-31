@@ -1,0 +1,15 @@
+import java.io.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class LeerTexto {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

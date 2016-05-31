@@ -1,0 +1,38 @@
+import java.io.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Encriptado {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+	public void cifrar (String nombreArchivo) {
+		
+		try {
+			
+			FileInputStream entrada = new FileInputStream(nombreArchivo);
+			BufferedInputStream buffer = new BufferedInputStream(entrada);
+			
+		} catch (IOException e) {
+			
+			System.out.println(e.printStackTrace(););
+			
+		}
+		
+		
+		
+	}
+	
+	public void descifrar (String nombreArchivo) {
+		
+		
+		
+	}
+	
+}

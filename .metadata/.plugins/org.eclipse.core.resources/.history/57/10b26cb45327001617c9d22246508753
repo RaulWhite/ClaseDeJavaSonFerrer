@@ -1,0 +1,52 @@
+import java.io.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Bufferes {
+	
+	public static void main(String[] args) throws IOException {
+		
+		escribir();
+		
+		leer();
+		
+	}
+
+	public static void escribir() throws IOException {
+			
+			FileOutputStream fichero = new FileOutputStream("numeros.dat");
+			BufferedOutputStream buffer = new BufferedOutputStream(fichero);
+			
+			for (int i = 1; i <= 50; i++) {
+				buffer.write(i);
+			}
+			
+			buffer.close();
+			
+	}
+
+	public static void leer() throws IOException {
+			
+			FileInputStream fichero = new FileInputStream("numeros.dat");
+			BufferedInputStream buffer = new BufferedInputStream(fichero);
+			
+			boolean eof = false;
+			int caracter = 0;
+			
+			while (!eof) {
+				caracter = buffer.read();
+				
+				if (caracter == -1){
+					eof = true;
+				} else {
+					System.out.println(caracter + " ");
+				}
+			}
+			
+			buffer.close();
+
+	}
+	
+}

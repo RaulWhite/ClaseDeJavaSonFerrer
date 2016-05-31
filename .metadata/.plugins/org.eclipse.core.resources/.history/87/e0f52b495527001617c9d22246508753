@@ -1,0 +1,25 @@
+import java.io.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class Encriptado {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+	public void cifrar (String nombreArchivo) {
+		
+		
+		
+	}
+	
+	public void descifrar (String nombreArchivo) {
+		
+	}
+	
+}
