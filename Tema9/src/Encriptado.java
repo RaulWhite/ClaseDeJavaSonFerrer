@@ -8,7 +8,7 @@ public class Encriptado {
 
 	public static void main(String[] args) {
 		
-		//cifrar("nombres.txt");
+		cifrar("nombres.txt");
 		
 		descifrar("nombres.txt.nuevo");
 		
@@ -32,12 +32,10 @@ public class Encriptado {
 				
 				if (byteEntrada == -1){
 					eof = true;
+				} else if (byteEntrada == 255) {
+					bufferSalida.write(0);
 				} else {
-					if (byteEntrada == 255) {
-						bufferSalida.write(0);
-					} else {
-						bufferSalida.write((byteEntrada + 1));
-					}
+					bufferSalida.write((byteEntrada + 1));
 				}
 			}
 			
@@ -70,12 +68,10 @@ public class Encriptado {
 				
 				if (byteEntrada == -1){
 					eof = true;
+				} else if (byteEntrada == 0) {
+					bufferSalida.write(255);
 				} else {
-					if (byteEntrada == 0) {
-						bufferSalida.write(255);
-					} else {
-						bufferSalida.write((byteEntrada - 1));
-					}
+					bufferSalida.write((byteEntrada - 1));
 				}
 			}
 			
