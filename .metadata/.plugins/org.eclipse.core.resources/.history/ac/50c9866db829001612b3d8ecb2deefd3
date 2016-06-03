@@ -1,0 +1,15 @@
+import java.io.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class OpsArchivos {
+
+	public static void main(String[] args) {
+		
+		File carpeta1 = new File("");
+		
+	}
+	
+}

@@ -54,17 +54,21 @@ public class Contactos {
 		
 		System.out.println("Se ha finalizado el registro de contactos.");
 		
+		entrada.close();
+		
 	}
 	
 	public static boolean seguir() {
 		
 		System.out.print("¿Quiere introducir más números? (s/N): ");
+		String respuesta = entrada.nextLine().toLowerCase();
 		
-		if (entrada.nextLine().toLowerCase().equals("s")){
+		if (respuesta.equals("s")){
 			return true;
-		} else if (entrada.nextLine().toLowerCase().equals("a")){
+		} else if (respuesta.equals("a")){
 			System.out.println("Proceso abortado. No se han escrito los cambios.");
-			System.exit(1);
+			entrada.close();
+			System.exit(0);
 			return false;
 		} else {
 			return false;
