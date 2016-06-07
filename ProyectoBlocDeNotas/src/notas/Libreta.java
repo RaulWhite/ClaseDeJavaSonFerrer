@@ -1,0 +1,71 @@
+package notas;
+
+public class Libreta {
+
+	private final String NOMBRE_ARCHIVO = "notas.txt";
+	private final int MAX_NOTAS = 1000;
+
+	private Nota[] notas = new Nota[MAX_NOTAS];
+	private int numNotas = 0;
+
+	public Libreta() {
+		leerNotas();
+	}
+
+	public void addNota(Nota nota) {
+
+		// TODO: A�adir despu�s de la �ltima nota del array la nota que se nos
+		// pasa como par�metro.
+		// Utilizar el valor de la variable numNotas.
+		// Actualizar despu�s el valor de numNotas.
+		// En caso de que hayamos llegado al m�ximo de notas, no hacer nada.
+		
+		
+
+	}
+
+	public void delNota(int posicion) {
+
+		// TODO: Eliminar el elemento del array notas[] que ocupa la posici�n
+		// indicada.
+		// Para ello, mueve hacia arriba todos los elementos que vengan a
+		// continuaci�n una posici�n, y actualiza la variable numNotas.
+
+	}
+
+	public void leerNotas() {
+
+		// TODO: Leer todas las filas del archivo, y rellenar el array notas[].
+		// Hacer que la variable numNotas sea igual al total de notas le�das.
+		// Si no se encuentra el archivo, hacer que se muestre el mensaje
+		// indicado en el enunciado de la pr�ctica.
+		// Si se produce otro tipo de excepci�n, mostrar la traza del error en
+		// la consola.
+
+		// La informaci�n de cada nota est� guardada en dos l�neas de texto, una
+		// para el t�tulo y otra para la descripci�n.
+		// Puedes usar los m�todos substring() e indexOf() para separar los
+		// datos de los comentarios del archivo.
+
+	}
+
+	public void guardarNotas() {
+
+		// TODO: Guardar las notas del array notas[] en el archivo "notas.txt".
+
+		// El formato en que se guardar�n debe ser el que aparece en el
+		// enunciado de la pr�ctica.
+		// Si se produce una excepci�n,se mostrar� el error que aparece en el
+		// enunciado.
+
+	}
+
+	public Nota[] getNotas() {
+		return notas;
+	}
+
+	public int getNumNotas() {
+		return numNotas;
+	}
+
+}

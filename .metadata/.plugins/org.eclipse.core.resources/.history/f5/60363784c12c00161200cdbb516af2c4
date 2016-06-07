@@ -1,0 +1,64 @@
+import javax.swing.filechooser.*;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import java.io.*;
+
+/**
+ * @author Raúl Blanco Rama
+ */
+
+public class ElegirYLeerArchivo extends JFrame {
+
+	public static void main(String[] args) {
+		
+		new ElegirYLeerArchivo();
+		
+	}
+	
+	public ElegirYLeerArchivo() {
+		
+		super("Elegir y leer archivo");
+		setSize(300, 200);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLayout(new FlowLayout());
+		
+		JMenuItem itmAbrir = new JMenuItem("Abrir");
+		itmAbrir.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				abrirCuadroDialogo();
+			}
+		});
+		
+		JMenu menuArchivo = new JMenu("Archivo");
+		menuArchivo.add(itmAbrir);
+		
+		JMenuBar barra = new JMenuBar();
+		barra.add(menuArchivo);
+		
+		setJMenuBar(barra);
+		
+		JTextArea txtArea = new JTextArea();
+		JScrollPane scrArea ⁼ new JScrollPane(txtArea);
+		
+		setVisible(true);
+		
+	}
+	
+	private void abrirCuadroDialogo() {
+		
+		JFileChooser cuadroAbrir = new JFileChooser();
+		
+		int resultado = cuadroAbrir.showOpenDialog(null);
+		
+		if (resultado == JFileChooser.CANCEL_OPTION)
+			return;
+		
+		File archivoElegido = cuadroAbrir.getSelectedFile();
+		
+		
+		
+	}
+	
+}
