@@ -7,6 +7,11 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
+/**
+ * @author Carlos Sogorb, Raúl Blanco Rama
+ * Todos los comentarios del alumno empiezan por /*
+ */
+
 public class Main extends JFrame implements ListSelectionListener {
 
 	private Libreta libreta;
@@ -88,11 +93,11 @@ public class Main extends JFrame implements ListSelectionListener {
 		// PANEL CENTRAL-DERECHO.
 		JPanel panelDerecho = new JPanel();
 
-		JLabel lblTitulo = new JLabel("T�tulo");
+		JLabel lblTitulo = new JLabel("Título");
 		txtTitulo = new JTextField();
 		txtTitulo.setPreferredSize(new Dimension(280, 25));
 
-		JLabel lblDescripcion = new JLabel("Descripci�n");
+		JLabel lblDescripcion = new JLabel("Descripción");
 		txtDescripcion = new JTextArea();
 		txtDescripcion.setPreferredSize(new Dimension(280, 269));
 		txtDescripcion.setBorder(BorderFactory.createLineBorder(Color.GRAY));
@@ -159,6 +164,11 @@ public class Main extends JFrame implements ListSelectionListener {
 			txtTitulo.setText(libreta.getNotas()[notaSeleccionada].getTitulo());
 			txtDescripcion.setText(libreta.getNotas()[notaSeleccionada].getDescripcion());
 			btnGuardar.setEnabled(true);
+		} else {
+			/* Error reparado: Si se borra una nota, no hay ninguna seleccionada
+			   pero el botón Guardar sigue activo */
+			
+			btnGuardar.setEnabled(false);
 		}
 
 	}
@@ -183,6 +193,26 @@ public class Main extends JFrame implements ListSelectionListener {
 		// final del JList.
 		// Seleccionar la nueva nota en el JList.
 		// Borrar la casilla de t�tulo y pasarle el foco a la casilla de t�tulo.
+		
+		Nota notas[] = libreta.getNotas();
+		int total = libreta.getNumNotas();
+		
+		/* Comprueba si al crear una nota nueva, no haya ya una sin guardar en la lista. */ 
+		
+		if (!(total > 0
+				&& modeloLista.getElementAt(total - 1).toString().equals("Nueva nota")
+				&& notas[total - 1].getTitulo().equals(" "))){
+			
+			/* Se crea una nota con un espacio en el título, por si se guarda sin título para que
+			   sea más visible en la lista.*/
+			libreta.addNota(new Nota(" ", ""));
+			modeloLista.addElement("Nueva nota");
+			
+		}
+		
+		txtTitulo.requestFocus();
+		lstTitulos.setSelectedIndex(libreta.getNumNotas() - 1);
+		txtTitulo.setCaretPosition(0);
 
 	}
 

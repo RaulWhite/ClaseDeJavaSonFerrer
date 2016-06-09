@@ -1,5 +1,9 @@
 package notas;
 
+/**
+ * @author Carlos Sogorb
+ */
+
 public class Nota {
 
 	private String titulo;
