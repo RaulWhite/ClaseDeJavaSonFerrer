@@ -50,16 +50,14 @@ public class Libreta {
 		// continuaci�n una posici�n, y actualiza la variable numNotas.
 		
 		/* Pasa la nota a eliminar a la primera posición en blanco del array. */
-		notas[numNotas] = notas[posicion];
 		
 		/* Pasa todas las notas desde la borrada hasta la última una posición hacia abajo. */
-		for (int i = posicion; i < numNotas; i++) {
+		for (int i = posicion; i < numNotas - 1; i++) {
 			notas[i] = notas[i+1];
 		}
 		
 		/* Al final, la nota borrada estará duplicada.
 		   Se borra el diplicado y se deja solo uno. */
-		notas[numNotas] = null;
 		
 		numNotas--;
 
